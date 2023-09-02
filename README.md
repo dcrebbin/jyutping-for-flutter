@@ -1,6 +1,8 @@
 ## Jyutping for Flutter
 
-A flutter package for converting Chinese characters to Jyutping.
+A flutter package for converting written Cantonese characters to Jyutping.
+
+License: **MIT**
 
 ## Pub
     dependencies:
@@ -22,7 +24,13 @@ print(testJyutping);
 #### Developer/s
 - Devon Crebbin
 
-#### Data by the Linguistic Society of Hong Kong (LSHK):
+---
+*The Jyutping Flutter package uses data from the Jyutping Table project*
+
+[The Linguistic Society of Hong Kong](https://lshk.org/)
+
+#### Jyutping Table Acknowledgements:
+- [Dr Chaak-ming Lau](https://github.com/chaaklau)
 - Dr Cheung Kwan Hin (PolyU)
 - Prof Lu Qin (PolyU)
 - Jyutping Workgroup, LSHK
