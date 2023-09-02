@@ -15,6 +15,24 @@ class JyutpingHelper {
     return false;
   }
 
+  static List<String> transformWholeChinesePhrase(
+      String chinesePhraseInput, bool returnMultiAsString) {
+    if (!IsChinese(chinesePhraseInput)) {
+      throw Exception("Input is not Chinese");
+    }
+    List<String> convertedJyutpingPhrase = [];
+    for (var i = 0; i < chinesePhraseInput.length; i++) {
+      if (returnMultiAsString) {
+        convertedJyutpingPhrase
+            .add(getJyutpingAsString(chinesePhraseInput[i], true));
+      } else {
+        convertedJyutpingPhrase
+            .add(getJyutpingAsString(chinesePhraseInput[i], false));
+      }
+    }
+    return convertedJyutpingPhrase;
+  }
+
   static String getJyutpingAsString(
       String chineseCharacterInput, bool returnMultiple) {
     if (!IsChinese(chineseCharacterInput)) {
