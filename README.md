@@ -1,39 +1,50 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## Jyutping for Flutter
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+A flutter package for converting written Cantonese characters to Jyutping.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+License: **MIT**
+## Pub
+    dependencies:
+      jyutping: ^0.1.0  #latest version
+## Example
+``` dart
+import 'package:jyutping/src/jyutping_helper.dart';
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+//getJyutpingAsString(Cantonese character, Retrieves a list of Jyutping if there's multiple conversions)
 
-## Features
+String testJyutping = JyutpingHelper.getJyutpingAsString("你",false);
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+//nei5
+print(testJyutping);
 
-## Getting started
+String testMultiJyutping = JyutpingHelper.getJyutpingAsString("你",true);
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+//[nei5,lei5]
+print(testMultiJyutping);
 
-## Usage
+//getWholeJyutpingPhrase(Cantonese phrase, Retrieves a list of Jyutping if there's multiple conversions)
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
+String testWholeJyutpingPhrase = JyutpingHelper.getWholeJyutpingPhrase("你好吗",false);
 
-```dart
-const like = 'sample';
+//[nei5,hou2,maa1]
+print(testWholeJyutpingPhrase);
 ```
 
-## Additional information
+## Acknowledgements 
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+#### Developer/s
+- Devon Crebbin
+
+---
+*The Jyutping Flutter package uses data from the Jyutping Table project*
+
+[The Linguistic Society of Hong Kong](https://lshk.org/)
+
+#### Jyutping Table Acknowledgements:
+- [Dr Chaak-ming Lau](https://github.com/chaaklau)
+- Dr Cheung Kwan Hin (PolyU)
+- Prof Lu Qin (PolyU)
+- Jyutping Workgroup, LSHK
+- Nathan Hammond (@nathanhammond)
+
+#### [Jyutping Table Repository (By LSHK)](https://github.com/lshk-org/jyutping-table)
