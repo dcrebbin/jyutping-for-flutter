@@ -1,13 +1,7 @@
 import 'package:jyutping/src/jyutping_data.dart';
 
 class JyutpingHelper {
-  static String helloworld(String testName) {
-    StringBuffer sb = StringBuffer();
-    sb.write("Hello $testName");
-    return sb.toString();
-  }
-
-  static bool IsChinese(String chineseCharacterInput) {
+  static bool isChinese(String chineseCharacterInput) {
     var chineseRegex = RegExp(r'[\u4E00-\u9FFF]');
     if (chineseRegex.hasMatch(chineseCharacterInput)) {
       return true;
@@ -17,7 +11,7 @@ class JyutpingHelper {
 
   static List<String> getWholeJyutpingPhrase(
       String chinesePhraseInput, bool returnMultiAsString) {
-    if (!IsChinese(chinesePhraseInput)) {
+    if (!isChinese(chinesePhraseInput)) {
       throw Exception("Input is not Chinese");
     }
     List<String> convertedJyutpingPhrase = [];
@@ -35,7 +29,7 @@ class JyutpingHelper {
 
   static String getJyutpingAsString(
       String chineseCharacterInput, bool returnMultiple) {
-    if (!IsChinese(chineseCharacterInput)) {
+    if (!isChinese(chineseCharacterInput)) {
       throw Exception("Input is not Chinese");
     }
     StringBuffer sb = StringBuffer();
@@ -49,12 +43,12 @@ class JyutpingHelper {
       return sb.toString();
     } catch (e) {
       throw Exception(
-          "${chineseCharacterInput} does not exist within the jyutping conversion dictionary");
+          "$chineseCharacterInput does not exist within the jyutping conversion dictionary");
     }
   }
 
   static List<String> getJyutpingAsList(String chineseCharacterInput) {
-    if (!IsChinese(chineseCharacterInput)) {
+    if (!isChinese(chineseCharacterInput)) {
       throw Exception("Input is not Chinese");
     }
     try {
