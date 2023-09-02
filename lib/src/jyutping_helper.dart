@@ -15,7 +15,7 @@ class JyutpingHelper {
     return false;
   }
 
-  static List<String> transformWholeChinesePhrase(
+  static List<String> getWholeJyutpingPhrase(
       String chinesePhraseInput, bool returnMultiAsString) {
     if (!IsChinese(chinesePhraseInput)) {
       throw Exception("Input is not Chinese");
