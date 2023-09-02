@@ -3,7 +3,6 @@
 A flutter package for converting written Cantonese characters to Jyutping.
 
 License: **MIT**
-
 ## Pub
     dependencies:
       jyutping: ^0.0.1  #latest version
@@ -11,12 +10,24 @@ License: **MIT**
 ``` dart
 import 'package:jyutping/src/jyutping_helper.dart';
 
-//getJyutpingAsString(Chinese character, Retrieve a list of Jyutping if there's multiple conversions)
+//getJyutpingAsString(Cantonese character, Retrieves a list of Jyutping if there's multiple conversions)
 
 String testJyutping = JyutpingHelper.getJyutpingAsString("你",false);
 
 //nei5
 print(testJyutping);
+
+String testMultiJyutping = JyutpingHelper.getJyutpingAsString("你",true);
+
+//[nei5,lei5]
+print(testMultiJyutping);
+
+//getWholeJyutpingPhrase(Cantonese phrase, Retrieves a list of Jyutping if there's multiple conversions)
+
+String testWholeJyutpingPhrase = JyutpingHelper.getWholeJyutpingPhrase("你好吗",false);
+
+//[nei5,hou2,maa1]
+print(testWholeJyutpingPhrase);
 ```
 
 ## Acknowledgements 
