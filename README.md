@@ -30,12 +30,15 @@ String testWholeJyutpingPhrase = JyutpingHelper.getWholeJyutpingPhrase("你好�
 print(testWholeJyutpingPhrase);
 ```
 
+## TODO
+
+- [ ] Unit tests 
+
 ## Acknowledgements 
 
 #### Developer/s
 - Devon Crebbin
 
----
 *The Jyutping Flutter package uses data from the Jyutping Table project*
 
 [The Linguistic Society of Hong Kong](https://lshk.org/)

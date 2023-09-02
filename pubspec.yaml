@@ -2,6 +2,7 @@ name: jyutping
 description: A chinese character to jyutping package for Dart developers.
 homepage: https://artvuu.group
 repository: https://github.com/artvuu/jyutping-for-flutter
+issue_tracker: https://github.com/artvuu/jyutping-for-flutter/issues
 version: 0.1.0
 environment:
   sdk: ^3.0.6
