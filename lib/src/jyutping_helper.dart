@@ -1,12 +1,8 @@
 import 'package:jyutping/src/jyutping_data.dart';
 
 class JyutpingHelper {
-  static bool isChinese(String chineseCharacterInput) {
-    var chineseRegex = RegExp(r'[\u4E00-\u9FFF]');
-    if (chineseRegex.hasMatch(chineseCharacterInput)) {
-      return true;
-    }
-    return false;
+  static bool isChinese(String input) {
+    return RegExp(r'\p{sc=Han}', unicode: true).hasMatch(input);
   }
 
   static List<String> getWholeJyutpingPhrase(

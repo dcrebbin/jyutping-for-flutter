@@ -3,11 +3,15 @@
 A flutter package for converting written Cantonese characters to Jyutping.
 
 License: **MIT**
+
 ## Pub
+
     dependencies:
-      jyutping: ^0.1.0  #latest version
+      jyutping: ^0.1.1  #latest version
+
 ## Example
-``` dart
+
+```dart
 import 'package:jyutping/src/jyutping_helper.dart';
 
 //getJyutpingAsString(Cantonese character, Retrieves a list of Jyutping if there's multiple conversions)
@@ -30,20 +34,18 @@ String testWholeJyutpingPhrase = JyutpingHelper.getWholeJyutpingPhrase("你好�
 print(testWholeJyutpingPhrase);
 ```
 
-## TODO
-
-- [ ] Unit tests 
-
-## Acknowledgements 
+## Acknowledgements
 
 #### Developer/s
+
 - Devon Crebbin
 
-*The Jyutping Flutter package uses data from the Jyutping Table project*
+_The Jyutping Flutter package uses data from the Jyutping Table project_
 
 [The Linguistic Society of Hong Kong](https://lshk.org/)
 
 #### Jyutping Table Acknowledgements:
+
 - [Dr Chaak-ming Lau](https://github.com/chaaklau)
 - Dr Cheung Kwan Hin (PolyU)
 - Prof Lu Qin (PolyU)
