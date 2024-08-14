@@ -54,6 +54,12 @@ void main() {
       expect(JyutpingHelper.getJyutpingAsList('你'), equals(['nei5', 'lei5']));
     });
 
+    test('getJyutpingAsList returns correct Jyutping list for single character',
+        () {
+      expect(JyutpingHelper.getJyutpingAsList('人'),
+          equals(['jan4', 'jan1', 'jan2']));
+    });
+
     test(
         'getJyutpingAsList returns multiple pronunciations for characters with multiple readings',
         () {

@@ -9,3 +9,7 @@
 - Makes formatting consistent with displaying some yues (i.e: Jan-1, Jan-04 etc)
 
 - Adds an initial set of tests to ensure the package is effectively working
+
+## 0.1.2
+
+- More updates to fix the inconsistency (i.e: Jan-1, Jan-04 etc)
