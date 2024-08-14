@@ -1,5 +1,7 @@
 ## Jyutping for Flutter
 
+### Version: 0.1.2
+
 A flutter package for converting written Cantonese characters to Jyutping.
 
 License: **MIT**
@@ -7,7 +9,7 @@ License: **MIT**
 ## Pub
 
     dependencies:
-      jyutping: ^0.1.1  #latest version
+      jyutping: ^0.1.2  #latest version
 
 ## Example
 
